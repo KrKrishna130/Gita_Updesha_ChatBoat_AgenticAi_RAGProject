@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 from agents import ask_agent
-
+# Here Backend part handle
 app = FastAPI(
     title="Bhagavad Gita Agentic RAG",
     description=(
