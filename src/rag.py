@@ -131,20 +131,20 @@ vector_store = PGVectorStore.from_params(
     port=POSTGRES_PORT,
     user=POSTGRES_USER,
     table_name="gita_rag",
-    embed_dim=768,
+    embed_dim=768,# here embeding dimesion define
 )
 
 storage_context = StorageContext.from_defaults(
     vector_store=vector_store
 )
-
+# ===Indexing done
 index = VectorStoreIndex(
     nodes,
     storage_context=storage_context,
 )
-
+# similarity search,Indexing,embeding dimension define
 query_engine = index.as_query_engine(
-    similarity_top_k=2,
+    similarity_top_k=2, # define similarity search
     response_mode="compact",
 )
 
