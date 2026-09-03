@@ -1,6 +1,13 @@
 from typing import Any, Dict, List
 # it is used to track the source documents/chunks used to generate an answer 
 # and attach those sources as citations.
+# ================Aim of citations===================
+# Collects source metadata — document name, page number, chunk ID, URL, etc.
+# Links retrieved chunks to the final answer
+# Formats citations such as [1], [2]
+# Helps provide source references so users can verify the answer.
+# Improves RAG transparency and reduces the "black-box" nature of LLM responses.
+# ===================================================
 class CitationManager:
     def __init__(self):
         pass
