@@ -56,7 +56,7 @@ class DocumentProcessor:
         )
 
         return document
-
+# create chunks here
     def create_chunks(
         self,
         document: Document,
@@ -68,7 +68,7 @@ class DocumentProcessor:
             chunk_size=CHUNK_SIZE,
             chunk_overlap=CHUNK_OVERLAP,
         )
-
+# here nodes are define
         nodes = splitter.get_nodes_from_documents(
             [document]
         )
