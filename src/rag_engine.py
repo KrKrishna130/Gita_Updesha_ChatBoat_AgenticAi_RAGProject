@@ -33,7 +33,7 @@ class RAGEngine:
             f"[RAG] Embedding model: "
             f"{OLLAMA_EMBED_MODEL}"
         )
-
+#=====embedding model======#
         self.embed_model = OllamaEmbedding(
             model_name=OLLAMA_EMBED_MODEL,
             base_url=OLLAMA_BASE_URL,
