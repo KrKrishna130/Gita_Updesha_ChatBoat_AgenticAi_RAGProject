@@ -19,12 +19,12 @@ OLLAMA_BASE_URL = os.getenv(
     "OLLAMA_BASE_URL",
     "http://localhost:11434",
 )
-
+# Here LLM is called from Base Model
 OLLAMA_LLM = os.getenv(
     "OLLAMA_LLM",
     "llama3.2:1b",
 )
-
+# Here we used Embeding model
 OLLAMA_EMBED_MODEL = os.getenv(
     "OLLAMA_EMBED_MODEL",
     "nomic-embed-text",
