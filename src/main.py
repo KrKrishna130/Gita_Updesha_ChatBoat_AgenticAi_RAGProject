@@ -9,6 +9,7 @@ if str(SRC_DIR) not in sys.path:
 
 from agents import ask_agent
 
+# ==banner show file ====#
 def show_banner():
 
     print("\n" + "=" * 70)
@@ -40,7 +41,7 @@ def main():
             question = input(
                 "\nQuestion: "
             ).strip()
-
+# Exception are created and handle
         except KeyboardInterrupt:
 
             print(
