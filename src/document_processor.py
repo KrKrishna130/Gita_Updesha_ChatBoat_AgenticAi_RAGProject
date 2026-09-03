@@ -10,7 +10,7 @@ from config import (
     CHUNK_SIZE,
     CHUNK_OVERLAP,
 )
-
+# here Doccument Process and ingestion layers started
 class DocumentProcessor:
 
     def __init__(self, pdf_path: Path = PDF_PATH):
