@@ -63,14 +63,14 @@ PGVECTOR_TABLE = os.getenv(
     "gita_vectors",
 )
 
-
+# Here Top k value is define
 TOP_K = int(
     os.getenv(
         "TOP_K",
         "2",
     )
 )
-
+# Here Context window value is define
 CONTEXT_WINDOW = int(
     os.getenv(
         "CONTEXT_WINDOW",
