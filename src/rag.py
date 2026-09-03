@@ -112,7 +112,7 @@ document = Document(
         "file_path": str(PDF_PATH),
     },
 )
-
+# here chunk_size,overlap size define in SentenceSplitter-Chunk typed used
 splitter = SentenceSplitter(
     chunk_size=500,
     chunk_overlap=80,
