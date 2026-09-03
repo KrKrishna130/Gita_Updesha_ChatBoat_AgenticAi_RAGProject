@@ -19,7 +19,7 @@ app = FastAPI(
     ),
     version="1.0.0",
 )
-
+# Here structure out put created and validation happen using Pydantic
 class QuestionRequest(BaseModel):
 
     question: str
