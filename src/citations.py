@@ -1,4 +1,6 @@
 from typing import Any, Dict, List
+# it is used to track the source documents/chunks used to generate an answer 
+# and attach those sources as citations.
 class CitationManager:
     def __init__(self):
         pass
